@@ -1,17 +1,5 @@
 /*media queries--------------------------------*/
 @media (max-width: 600px) {
-  div.input-zone form {
-    img {
-      width: 20px;
-      height: 20px;
-    }
-    input {
-      width: 50%;
-      margin: -35px 5px 10px;
-
-    }
-  }
-
  .invisible-xs {
    display: none;
  }
@@ -147,13 +135,19 @@ body {
   font-family: "Helvetica Neue", Arial,sans-serif;
   box-sizing: border-box;
 
+  p {
+    color: grey;
+  }
+
   #topheader {
     width: 100%;
     border-bottom: 1px solid lightgrey;
     background-color: #fff;
 
-    .container.input-zone
-      
+    .container.input-zone {
+      padding-bottom: 0;
+    }
+
     .line {
       border: 0;
 
@@ -175,6 +169,7 @@ body {
   }
 }/*end of generic CSS body*/
 
+/*topheader additional styles*/
 .line {
   float: left;
   width: 100%;
@@ -204,7 +199,6 @@ body {
       font-size: 0.9em;
     }
 }
-
 /*------end of first part in header ----faux absolute positioning*/
 
 
@@ -215,7 +209,7 @@ body {
 
 .input-zone form {
   input {
-    width: 90%;
+    width: 85%;
   }
 
 }
@@ -231,6 +225,8 @@ body {
   width: 25%;
 }
 
+/*navigation menu styles*/
+
 .container.navbar {
   display: flex;
   /*justify-content: center;*/
@@ -243,31 +239,29 @@ body {
   ul {
     overflow: hidden;
     margin: 0;
-    li {
-    display: inline-block;
-    list-style-type: none;
-    a {
-      display: block;
-      text-align: center;
-      /*padding: 10px 10px;*/
-      text-decoration: none;
-      color: grey;
-    }
+      li {
+      display: inline-block;
+      list-style-type: none;
+      a {
+        display: block;
+        text-align: center;
+        /*padding: 10px 10px;*/
+        text-decoration: none;
+        color: grey;
+      }
 
-    a:hover {
-    background-color: #ddd;
-    color: black;
-    }
+      a:hover {
+      background-color: #ddd;
+      color: black;
+      }
 
-
-
-    img {
-      width: 15px;
-      height: 15px;
+      img {
+        width: 15px;
+        height: 15px;
+      }
     }
   }
-}
-}
+}/*end of navigation menu styling*/
 
 /*.input-zone header {
   img,form,p {
