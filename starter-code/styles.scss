@@ -146,32 +146,67 @@ body {
   font-size: 16px;
   font-family: "Helvetica Neue", Arial,sans-serif;
   box-sizing: border-box;
-}
 
-#topheader {
-  width: 100%;
-  border-bottom: 1px solid lightgrey;
-  background-color: #fff;
+  #topheader {
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    background-color: #fff;
 
-  div header {
-    border: 0;
+    .container.input-zone
+      
+    .line {
+      border: 0;
+
+    }
   }
 
+  #topheader > .container {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 60px;
+  }
+
+  .clear-fix {
+    clear: both;
+  }
+
+  .product .clear-fix {
+    border-top: 1px solid lightGrey;
+  }
+}/*end of generic CSS body*/
+
+.line {
+  float: left;
+  width: 100%;
+  display: block;
+  position:: relative;
+
+    .input-zone-items {
+      position: relative;
+      float: left;
+      left: 100%;
+    }
+
+    #item1 {
+      margin-left: -100%;
+      width: 5%;
+    }
+    #item2 {
+      margin-left: -90%;
+      width: 75%;
+    }
+    #item3 {
+      margin-left: -15%;
+      width: 15%;
+      /*additional styling*/
+      color: grey;
+      line-height: 1em;
+      font-size: 0.9em;
+    }
 }
 
-#topheader > .container {
-  margin-top: 0;
-  margin-bottom: 0;
-  height: 60px;
-}
+/*------end of first part in header ----faux absolute positioning*/
 
-.clear-fix {
-  clear: both;
-}
-
-.product .clear-fix {
-  border-top: 1px solid lightGrey;
-}
 
 .logo {
   width: 40px;
@@ -180,9 +215,20 @@ body {
 
 .input-zone form {
   input {
-    width: 70%;
+    width: 90%;
   }
 
+}
+
+.subscribe button {
+  color: #fff;
+  background-color: rgb(218, 85, 47);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#email {
+  width: 25%;
 }
 
 .container.navbar {
@@ -223,11 +269,11 @@ body {
 }
 }
 
-.input-zone header {
+/*.input-zone header {
   img,form,p {
   display: inline;
 }
-}
+}*/
 
 .container {
   padding: 15px;

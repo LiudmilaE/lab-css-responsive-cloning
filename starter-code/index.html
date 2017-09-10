@@ -10,16 +10,22 @@
 </head>
 
 <body>
-  <div id="topheader">
-  <div class="container input-zone">
-    <header>
-      <a class="input-zone-items"><img src="images\logo.png" alt="Logo's image" class="logo logo-xs"></a>
-      <a class="input-zone-items">
+  <!-- Main header of the page -->
+  <header id="topheader">
+  <div class="container input-zone" id="first-input-zone">
+    <header class="line">
+      <a class="input-zone-items" id="item1">
+        <img src="images\logo.png" alt="Logo's image" class="logo logo-xs">
+      </a>
+      <a class="input-zone-items" id="item2">
         <form>
-        <img src="images\search.png" alt="Search"> :
-        <input type="text" name="search" placeholder="Discover your next favorite thing…">
-      </form></a>
-      <a class="input-zone-items"><p class="top-left">... Log in</p></a>
+          <img src="images\search.png" alt="Search"> :
+          <input type="text" name="search" placeholder="Discover your next favorite thing…">
+        </form>
+      </a>
+      <a class="input-zone-items" id="item3">
+        <p>... Login</p>
+      </a>
     </header>
   </div>
 
@@ -37,21 +43,22 @@
     </ul>
     <div class="clear-fix"></div>
   </nav>
-</div>
+</header>
 
-
+<!-- Welcome zone that is invisible on the XS screens-->
   <div class="container input-zone welcome invisible-xs">
     <header>
     <h2>Welcome to Product Hunt</h2>
     <p>Get the best new products in your inbox, daily.</p>
     <form class="subscribe">
-      <input type="email" placeholder="Your email">
+      <input type="email" placeholder="Your email" id="email">
       <button type="button">SUBSCRIBE</button>
     </form>
     <img src="images\close.png" alt="Close button" class="top-left">
   </header>
   </div>
 
+<!-- Main content of the page with product info-->
   <div class="container">
     <header>
       <h3>Popular this week</h3>
